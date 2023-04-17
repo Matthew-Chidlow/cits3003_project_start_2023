@@ -2,6 +2,7 @@
 #define SHADER_INTERFACE_H
 
 #include <string>
+#include <vector>
 #include <optional>
 #include <filesystem>
 #include <unordered_map>
@@ -43,7 +44,7 @@ public:
                     std::unordered_map<std::string, std::string> vert_defines = {},
                     std::unordered_map<std::string, std::string> frag_defines = {});
 
-    uint id() const;
+    [[nodiscard]] uint id() const;
 
     void use() const;
 

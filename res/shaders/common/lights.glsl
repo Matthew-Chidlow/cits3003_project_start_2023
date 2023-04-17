@@ -1,3 +1,7 @@
+#ifndef NUM_PL
+#define NUM_PL 0
+#endif
+
 // Material Properties
 struct Material {
     vec3 diffuse_tint;

@@ -2,10 +2,6 @@
 #include "../common/lights.glsl"
 #include "../common/maths.glsl"
 
-#ifndef NUM_PL
-#define NUM_PL 0
-#endif
-
 // Per vertex data
 layout(location = 0) in vec3 vertex_position;
 layout(location = 1) in vec3 normal;
