@@ -588,7 +588,7 @@ void EditorScene::EditorScene::save_to_json_file() {
 void EditorScene::EditorScene::load_from_json_file(const SceneContext& scene_context) {
     const auto init_path = (std::filesystem::current_path() / "scene.json").string();
 
-#ifndef __APPLE__
+#ifdef __APPLE__
     // Apparently the file filter doesn't work properly on Mac?
     // Feel free to re-enable if you want to try it, but I have disabled it on Mac for now.
 
